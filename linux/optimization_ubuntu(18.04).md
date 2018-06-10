@@ -106,24 +106,20 @@ sudo apt-get install vim
 sudo apt-get install curl
 ```
 
-## 安装 tsocks 实现命令行科学上网
+## 安装 proxychains 实现命令行科学上网
 
 ```bash
-sudo apt-get install tsocks
+sudo apt-get install proxychains4
 
 # 修改配置文件
-sudo vim /etc/tsocks.conf
+sudo vim /etc/proxychains4.conf
 ```
 
-配置如下
+将配置文件最下面的socks4 127.0.0.1 9095 改为 socks5 127.0.0.1 1080
 
-```
-local = 192.168.1.0/255.255.255.0  #local表示本地的网络，也就是不使用socks代理的网络
-local = 127.0.0.0/255.0.0.0
-server = 127.0.0.1   #socks服务器的IP
-server_type = 5  #socks服务版本
-server_port = 1080  #socks服务使用的端口
-```
+使用方法：
+
+在需要代理的命令前加上 proxychains4
 
 ## 美化界面
 
