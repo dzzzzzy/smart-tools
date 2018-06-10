@@ -16,7 +16,7 @@ sh -c "$(wget https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/to
 
 配置主题等可在项目主页 readme 查看
 
-https://github.com/robbyrussell/oh-my-zsh
+<https://github.com/robbyrussell/oh-my-zsh>
 
 ## 安装 Chrome 浏览器
 
@@ -33,7 +33,6 @@ sudo dpkg -i *.deb
 1. 新标签页优化 [Infinity New Tab (Pro)](https://chrome.google.com/webstore/detail/infinity-new-tab-pro/nnnkddnnlpamobajfibfdgfnbcnkgngh)
 2. [达达划词翻译](https://chrome.google.com/webstore/detail/%E8%BE%BE%E8%BE%BE%E5%88%92%E8%AF%8D%E7%BF%BB%E8%AF%91/cajhcjfcodjoalmhjekljnfkgjlkeajl)
 3. 码云的git文件树插件，github也可使用 [GitCodeTree](https://chrome.google.com/webstore/detail/gitcodetree/inaaldjpdbkaodlmdcplgpoibohcmmlj)
-
 
 ## 卸载不常用软件(根据个人情况选择)
 
@@ -62,7 +61,7 @@ sudo apt-get remove libreoffice-common
 * 卸载 Firefox 浏览器
 
 ```bash
-sudo apt-get remove firefox*
+sudo apt-get remove firefox-common
 ```
 
 ## 安装 WPS
@@ -119,13 +118,11 @@ sudo vim /etc/tsocks.conf
 配置如下
 
 ```
-local = 192.168.1.0/255.255.255.0 #local表示本地的网络，也就是不使用socks代理的网络
-
-server = 127.0.0.1 # SOCKS 服务器的 IP
-
-server_type = 5 # SOCKS 服务版本
-
-server_port = 1080 # SOCKS 服务使用的端口
+local = 192.168.1.0/255.255.255.0  #local表示本地的网络，也就是不使用socks代理的网络
+local = 127.0.0.0/255.0.0.0
+server = 127.0.0.1   #socks服务器的IP
+server_type = 5  #socks服务版本
+server_port = 1080  #socks服务使用的端口
 ```
 
 ## 美化界面
@@ -149,7 +146,7 @@ sudo apt-get install gnome-tweak-tool
 
 ### 安装 Gnome Theme Shell、 Gtk Theme 和 Icons
 
-打开 https://www.gnome-look.org/ 安装你喜欢的
+打开 <https://www.gnome-look.org/> 安装你喜欢的
 
 推荐：
 
